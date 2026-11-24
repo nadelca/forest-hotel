@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#eaf1e6">
+    <meta name="description" content="Купольные дома в самом сердце зимнего леса. Тишина, цифровая детоксикация и отдых под ключ. Бронируйте до 1 декабря со скидкой 15% по промокоду LES3112.">
+    <title>LES 31°12′ — ваш дом в сердце зимнего леса</title>
+    <link rel="preload" href="assets/fonts/ClashDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Inter-Cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="winter-theme">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <!-- Золотые искорки поверх всего полотна -->
+    <div class="sparks" id="sparks" aria-hidden="true"></div>
+
+    <!-- ВЕРХНЯЯ ПАНЕЛЬ И ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ -->
+    <header class="topbar" id="topbar">
+        <a class="brand" href="#hero">
+            <span class="brand-mark">LES<span>31</span><sup>°12′</sup></span>
+            <span class="brand-sub">лесной отель</span>
+        </a>
+
+        <nav class="topnav" aria-label="Основная навигация">
+            <a href="#pains">О тишине</a>
+            <a href="#solutions">Как мы живём</a>
+            <a href="#urgency">Условия</a>
+        </nav>
+
+        <!-- [БЛОК 2] — Переключатель темы -->
+        <label class="theme-switch" for="winter-toggle" title="Переключить время года">
+            <input type="checkbox" id="winter-toggle" checked>
+            <span class="theme-switch__track" aria-hidden="true">
+                <svg class="snowflake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M3.34 7l17.32 10M3.34 17l17.32-10"/>
+                    <path d="M12 5.2 9.6 3M12 5.2 14.4 3M12 18.8 9.6 21M12 18.8l2.4 2.2"/>
+                    <path d="m5.6 8.5-3-.3.4-3M5.6 8.5l-.8-2.9 2.8-1M18.4 15.5l3 .3-.4 3M18.4 15.5l.8 2.9-2.8 1"/>
+                    <path d="m5.6 15.5-2.6 1.5-1.7-2.5M5.6 15.5l.4 3 2.7-.9M18.4 8.5l2.6-1.5 1.7 2.5M18.4 8.5l-.4-3-2.7.9"/>
+                </svg>
+                <span class="theme-switch__sun" aria-hidden="true"></span>
+            </span>
+            <span class="theme-switch__label" id="seasonLabel">Зима</span>
+        </label>
+    </header>
+
+    <main id="main">
+
+        <!-- [БЛОК 1] — HERO / ПЕРВЫЙ ЭКРАН -->
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+            <div class="hero-media" aria-hidden="true">
+                <img class="hero-photo hero-photo--winter" src="image.jpeg" alt="">
+                <img class="hero-photo hero-photo--summer" src="image 1.jpeg" alt="">
+                <div class="hero-fog hero-fog--one"></div>
+                <div class="hero-fog hero-fog--two"></div>
+                <div class="hero-vignette"></div>
+            </div>
+
+            <div class="hero-content">
+                <p class="hero-eyebrow"><span class="eyebrow-line"></span> 56°49′ с.ш. · 31°12′ в.д. · 0 соседей</p>
+                <h1 class="hero-title" id="hero-title">
+                    <span class="title-line"><span>СБЕЖАТЬ ИЗ ГОРОДА,</span></span>
+                    <span class="title-line"><span>А НЕ ИЗ РЕАЛЬНОСТИ.</span></span>
+                </h1>
+                <p class="hero-subtitle">Ваш дом в самом сердце зимнего леса.</p>
+            </div>
+
+            <div class="hero-bottom">
+                <a class="scroll-cue" href="#pains">
+                    <span>Листайте вниз</span>
+                    <span class="scroll-cue__line"></span>
+                </a>
+                <p class="hero-count"><span>01</span> / 04</p>
+            </div>
+        </section>
+
+        <!-- ИНТРО-ПОЛОСА -->
+        <section class="intro-strip" aria-label="Коротко об отеле">
+            <div class="container intro-grid">
+                <p class="reveal">Купольные дома среди сосен. Панорамные окна, камин и тишина, которую слышно.</p>
+                <ul class="intro-facts reveal">
+                    <li><strong>100 м</strong><span>между домами</span></li>
+                    <li><strong>0</strong><span>вайфая в номерах</span></li>
+                    <li><strong>40 сек</strong><span>на бронирование</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- [БЛОК 3] — БОЛЬ КЛИЕНТА -->
+        <section class="pains section" id="pains" aria-labelledby="pains-title">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="kicker"><span>01</span> Признайтесь себе</p>
+                    <h2 class="section-title" id="pains-title">Город не отпускает.<br>Даже за 100 километров.</h2>
+                </header>
+
+                <div class="cards-grid">
+                    <article class="pain-card reveal" data-cta="ВЫДОХНУТЬ И ЗАБРОНИРОВАТЬ" data-image="35.jpeg">
+                        <div class="card-inner">
+                            <div class="card-photo" aria-hidden="true"></div>
+                            <div class="card-body">
+                                <span class="card-index">01.</span>
+                                <h3 class="pain-title">ТИШИНА, КОТОРОЙ БОЛЬШЕ НЕТ</h3>
+                                <p class="pain-text">«Я устал от неоновых вывесок, уведомлений в мессенджерах и бесконечного шума. Мне не нужен еще один "люкс" с золотыми кранами. Мне нужно, чтобы за окном было тихо. Так тихо, чтобы слышать, как падает снег. Я хочу выдохнуть, но город не отпускает даже за 100 километров».</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pain-card reveal" data-cta="ОСТАНОВИТЬ ВРЕМЯ И УЕХАТЬ" data-image="image.jpeg">
+                        <div class="card-inner">
+                            <div class="card-photo" aria-hidden="true"></div>
+                            <div class="card-body">
+                                <span class="card-index">02.</span>
+                                <h3 class="pain-title">ОТПУСК, КОТОРЫЙ ТАК И НЕ НАСТУПИЛ</h3>
+                                <p class="pain-text">«Я уже полгода обещаю себе нормальный отдых. Откладываю, жду "идеального момента", пока на работе не случается аврал. В итоге я либо не езжу никуда вообще, либо срываюсь в последний момент и живу в безликой коробке у трассы, потому что всё приличное уже занято».</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pain-card reveal" data-cta="ПРИЕХАТЬ И ПРОСТО ОТДЫХАТЬ" data-image="istockphoto-1454099860-612x612.jpg">
+                        <div class="card-inner">
+                            <div class="card-photo" aria-hidden="true"></div>
+                            <div class="card-body">
+                                <span class="card-index">03.</span>
+                                <h3 class="pain-title">ОТДЫХ, КОТОРЫЙ ВЫМАТЫВАЕТ</h3>
+                                <p class="pain-text">«Любая поездка за город — это квест. Забронировать дом, договориться с владельцем, найти, где купить дрова, почистить снег у крыльца... Я приезжаю не отдыхать, а работать администратором своего же отдыха. Я хочу просто зайти, бросить вещи и упасть в кровать».</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- [БЛОК 4] — РЕШЕНИЕ -->
+        <section class="solutions section" id="solutions" aria-labelledby="solutions-title">
+            <div class="solution-scene" aria-hidden="true">
+                <img class="solution-scene__photo" src="istockphoto-1349227362-612x612.jpg" alt="">
+                <div class="solution-scene__shade"></div>
+            </div>
+
+            <div class="container solution-scene__content">
+                <div class="reveal">
+                    <p class="kicker kicker--light"><span>02</span> Решение</p>
+                    <h2 class="section-title section-title--light" id="solutions-title">Мы убрали всё лишнее.<br>Оставили тишину.</h2>
+                    <p class="scene-caption">Панорамное окно выходит в глухой лес. Больше здесь ничего нет — только свет, дерево и тишина.</p>
+                </div>
+            </div>
+
+            <div class="container solutions-body">
+                <div class="cards-grid solution-grid">
+                    <article class="solution-card reveal">
+                        <span class="solution-icon" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M16 3v26M5.7 9.5l20.6 13M5.7 22.5l20.6-13"/><circle cx="16" cy="16" r="3.2"/></svg>
+                        </span>
+                        <h3 class="solution-title">ПОЛНАЯ ЦИФРОВАЯ ДЕТОКСИКАЦИЯ</h3>
+                        <p class="solution-text">В наших купольных домах нет вайфая в номерах (только в общей зоне), а панорамные окна выходят в глухой лес. Здесь нет соседей за стеной. Только вы, панорамный вид на звезды и потрескивание дров в камине, который мы разожжем к вашему приезду.</p>
+                    </article>
+
+                    <article class="solution-card reveal">
+                        <span class="solution-icon" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="16" cy="17" r="12"/><path d="M16 10v7l5 3M8 3h4M20 3h4"/></svg>
+                        </span>
+                        <h3 class="solution-title">ВАШ ПОБЕГ ЗА 40 СЕКУНД</h3>
+                        <p class="solution-text">Мы уже всё подготовили. Бронирование занимает 40 секунд. Вы нажимаете кнопку, и дата фиксируется за вами. Никаких звонков, согласований и ожидания подтверждения. Ваш побег из рутины начинается прямо сейчас.</p>
+                    </article>
+
+                    <article class="solution-card reveal">
+                        <span class="solution-icon" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 14 16 5l12 9v13H4V14Z"/><path d="M12 27v-8h8v8M13 3v5M19 3v5"/></svg>
+                        </span>
+                        <h3 class="solution-title">ОТДЫХ В КОНЦЕПТЕ "ПОД КЛЮЧ"</h3>
+                        <p class="solution-text">Протопленный дом, чистое белье, набор для глинтвейна в холодильнике, халаты и тапочки. Вам не нужно брать с собой ничего, кроме зубной щетки. А снег у вашего крыльца уберет наш персонал, пока вы пьете утренний кофе.</p>
+                    </article>
+                </div>
+
+                <!-- Фотореалистичная лента атмосферы -->
+                <div class="filmstrip reveal" aria-label="Атмосфера отеля">
+                    <figure><img src="istockphoto-1454099860-612x612.jpg" alt="Деревянный домик в лесу" loading="lazy"><figcaption>Домик в соснах</figcaption></figure>
+                    <figure><img src="istockphoto-1349227362-612x612.jpg" alt="Интерьер с большими окнами" loading="lazy"><figcaption>Свет и дерево</figcaption></figure>
+                    <figure><img src="istockphoto-2219431954-612x612.jpg" alt="Терраса современного A-frame домика" loading="lazy"><figcaption>Терраса с видом на лес</figcaption></figure>
+                    <figure><img src="35.jpeg" alt="Лесная поляна в тумане" loading="lazy"><figcaption>Тишина вокруг</figcaption></figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- [БЛОК 5] — ОФФЕР И СРОЧНОСТЬ -->
+        <section class="urgency section" id="urgency" aria-labelledby="urgency-title">
+            <div class="container urgency-inner">
+                <div class="calendar-wrap reveal" aria-hidden="true">
+                    <div class="calendar-card" id="calendar">
+                        <span class="calendar-glow"></span>
+                        <div class="calendar-page calendar-page--back"></div>
+                        <div class="calendar-page calendar-page--mid"></div>
+                        <div class="calendar-page calendar-page--front">
+                            <div class="calendar-head">
+                                <span>ДЕКАБРЬ</span>
+                                <span class="calendar-badge">−15%</span>
+                                <span>2026</span>
+                            </div>
+                            <div class="calendar-weekdays" aria-hidden="true">
+                                <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+                            </div>
+                            <div class="calendar-grid">
+                                <span></span><span class="is-active">1</span><span class="is-locked">2</span><span class="is-locked">3</span><span class="is-locked">4</span><span class="is-locked">5</span><span class="is-locked">6</span>
+                                <span class="is-locked">7</span><span class="is-locked">8</span><span class="is-locked">9</span><span class="is-locked">10</span><span class="is-locked">11</span><span class="is-locked">12</span><span class="is-locked">13</span>
+                                <span class="is-locked">14</span><span class="is-locked">15</span><span class="is-locked">16</span><span class="is-locked">17</span><span class="is-locked">18</span><span class="is-locked">19</span><span class="is-locked">20</span>
+                                <span class="is-locked">21</span><span class="is-locked">22</span><span class="is-locked">23</span><span class="is-locked">24</span><span class="is-locked">25</span><span class="is-locked">26</span><span class="is-locked">27</span>
+                                <span class="is-locked">28</span><span class="is-locked">29</span><span class="is-locked">30</span><span class="is-locked">31</span><span></span><span></span><span></span>
+                            </div>
+                            <div class="calendar-date"><strong>01</strong><em>декабря</em></div>
+                            <div class="calendar-foot">последний день выгоды · −15%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urgency-copy reveal">
+                    <p class="kicker"><span>03</span> Окно возможности</p>
+                    <h2 class="section-title" id="urgency-title">ПОЙМАЙТЕ ЗИМНЮЮ ТИШИНУ ДО ТОГО, КАК ОНА СТАНЕТ ДОРОЖЕ</h2>
+                    <p class="urgency-text">Забронируйте свой лесной домик до 1 декабря и зафиксируйте цену с выгодой 15%. С 2 декабря стоимость поднимется — зимний сезон в самом разгаре, и лучшие даты разлетаются первыми.</p>
+
+                    <p class="timer-label">До повышения цены осталось:</p>
+                    <div class="timer" id="timer" role="timer" aria-live="polite">
+                        <div class="timer-unit"><span class="timer-numbers" id="timer-d">00</span><span class="label">д</span></div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-unit"><span class="timer-numbers" id="timer-h">00</span><span class="label">ч</span></div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-unit"><span class="timer-numbers" id="timer-m">00</span><span class="label">м</span></div>
+                        <span class="timer-sep">:</span>
+                        <div class="timer-unit"><span class="timer-numbers" id="timer-s">00</span><span class="label">с</span></div>
+                    </div>
+                    <p class="promo-note">Промокод <strong>LES3112</strong> · скидка 15% применяется при бронировании</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- [БЛОК 6] — КНОПКА CTA -->
+        <section class="cta section" id="cta" aria-labelledby="cta-title">
+            <div class="cta-lamp" id="ctaLamp" aria-hidden="true">
+                <span class="lamp-halo"></span>
+            </div>
+            <div class="container cta-inner">
+                <p class="kicker kicker--light"><span>04</span> Ваш ход</p>
+                <h2 class="section-title section-title--light" id="cta-title">ТИШИНА ЖДЁТ.<br>НО НЕ ВЕЧНО.</h2>
+                <p class="cta-lead">40 секунд — и дата за вами. Дальше мы сделаем всё остальное.</p>
+                <button class="cta-button" type="button" data-open-booking>ЗАБРОНИРОВАТЬ ДОМИК СО СКИДКОЙ 15%</button>
+                <p class="cta-note">Без звонков и ожидания подтверждения · отмена без штрафа за 48 часов</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="brand-mark">LES<span>31</span><sup>°12′</sup></span>
+            <p>Ваш дом в самом сердце зимнего леса.</p>
+            <a href="mailto:hello@les3112.ru">hello@les3112.ru</a>
+        </div>
+    </footer>
+
+    <!-- Плавающая кнопка: текст меняется в зависимости от секции -->
+    <div class="cta-dock" id="ctaDock">
+        <button class="cta-button cta-button--dock" type="button" data-open-booking>ЗАБРОНИРОВАТЬ ДОМИК СО СКИДКОЙ 15%</button>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО БРОНИРОВАНИЯ -->
+    <div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="close-btn" type="button" id="closeModal" aria-label="Закрыть окно">&times;</button>
+            <div id="bookingFormWrap">
+                <p class="kicker"><span>LES</span> 40 секунд до тишины</p>
+                <h2 id="modalTitle">Заберите дату себе</h2>
+                <p class="modal-subtitle">Заполните данные — и лучшие зимние даты закрепятся за вами.</p>
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Александр" autocomplete="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 000-00-00" autocomplete="tel" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="date">Желаемая дата заезда</label>
+                        <input type="date" id="date" name="date" min="2026-11-24" max="2027-03-31" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="promo">Промокод</label>
+                        <input type="text" id="promo" name="promo" value="LES3112" readonly>
+                    </div>
+                    <button type="submit" class="submit-btn">ЗАБРОНИРОВАТЬ СО СКИДКОЙ 15%</button>
+                    <p class="micro-text">Скидка действует до 01.12.2026 включительно. Отмена без штрафа за 48 часов до заезда.</p>
+                </form>
+            </div>
+            <div class="modal-success" id="modalSuccess" hidden>
+                <span class="success-mark" aria-hidden="true">✓</span>
+                <h2>Дата за вами</h2>
+                <p>Мы отправили детали бронирования в WhatsApp. Промокод <strong>LES3112</strong> применён — скидка 15% зафиксирована.</p>
+                <button class="submit-btn" type="button" id="successClose">Вернуться на сайт</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
